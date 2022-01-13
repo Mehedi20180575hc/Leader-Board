@@ -25,6 +25,7 @@ hr{
     margin: 30px 0;
 }
 /* common styles or utilities */
+
 .section-title{
     color: #562EFF;
     font-size: 24px;
@@ -119,4 +120,34 @@ hr{
     text-align: center;
     line-height: 35px;
     border-radius: 15px;
+}
+/* ----------------------
+Media Queries 
+--------------------------*/
+
+/* Mobile Device */
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players,.blogs,.courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,.blogs,.courses{
+        flex-direction: column;  
+    }
+}
+@media only screen and (min-width:688px) and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .blogs,.courses{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .player,.blogs,.courses{
+        flex-direction: column;  
+    }
 }
