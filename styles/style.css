@@ -14,9 +14,10 @@ main{
 .container{
     background-color: #fff;
     width: 870px;
-    height: 679px;
+    /* height: 679px; */
     padding: 30px 0 0 30px;
     margin: 22px;
+    padding: 30px;
     border-radius: 20px;
 }
 hr{
@@ -79,5 +80,43 @@ hr{
     text-decoration: none;
     color: #562EFF;
     font-size: 16px;
-    
+}
+/* course part start  */
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 24px;
+}
+.course{
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 10px;
+}
+.course .course-banner img{
+    height: 104px;
+    width: 224px;
+}
+.course-detail{
+    padding-right: 18px;
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.course-info p{
+    color: #A2A2A2;
+}
+.fas{
+    color: #FFC014;
+    font-size: 12px;
+}
+.course-duration{
+    background-color: #FFE4E8;
+    color: #ED6B4F;
+    height: 35px;
+    width: 110px;
+    text-align: center;
+    line-height: 35px;
+    border-radius: 15px;
 }
